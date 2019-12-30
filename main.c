@@ -6,7 +6,7 @@
 /* Callbacks for global objects add/remove */
 void global_add(void *data, struct wl_registry *registry, uint32_t id, const char *interface, uint32_t version)
 {
-    printf("In global add cb: interface: %s, version: %s\n", interface, version);
+    printf("In global add cb: interface: %s, version: %d\n", interface, version);
 }
 
 void global_remove(void *data, struct wl_registry *registry, uint32_t id)
